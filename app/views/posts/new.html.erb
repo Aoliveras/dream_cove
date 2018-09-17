@@ -1,0 +1,30 @@
+<h1>Create a new post page</h1>
+<%= form_for @post do |f| %>
+  <% if @post.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @post.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+  <div class="field">
+    <%= f.label :dream_time %>
+    <%= f.text_field :dream_time %>
+  </div>
+  <div class="field">
+    <%= f.label :dream_type %>
+    <%= f.text_field :dream_type %>
+  </div>
+  <div class="actions"><%= f.submit %></div>
+<% end %>
