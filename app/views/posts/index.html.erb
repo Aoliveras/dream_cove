@@ -1,5 +1,22 @@
-<h1>This is my post index page that will show all of the community posts</h1>
+<h1>Welcome to the Cove!</h1>
+<p id="alert"><%= alert %></p>
+<div>
+    <th>All Dreams</th>
+    <table>
 
-<h1>Create Post in nav</h1>
+        <tr>
+            <th>Title</th>
+            <th>Posted</th>
 
-<h1>Edit Post in nav</h1>
+        </tr>
+
+        <% @posts.each do |post| %>
+            <tr>
+                <td><%= post.title %><td>
+                <td><%= post.created_at.to_date
+ %><td>
+
+            </tr>
+        <% end %>
+    </table>
+</div>
