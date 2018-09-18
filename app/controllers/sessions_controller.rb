@@ -1,9 +1,11 @@
 class SessionsController < ApplicationController
+    # before_action :authenticate
+    # before_action :authorize
 
     def new
       # Nothing to do here other than render new.html.erb
     end
-  
+
     def create
       # Not using an instance variable since
       # we're not providing the user to a view
@@ -22,10 +24,10 @@ class SessionsController < ApplicationController
         render :new
       end
     end
-  
+
     def destroy
       session[:user_id] = nil
       redirect_to root_path, notice: "Logged out!"
     end
-  
+
   end
