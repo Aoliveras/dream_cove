@@ -1,7 +1,8 @@
 <p>
-  <% if current_user %>
+    <% if current_user %>
     Welcome, <%= current_user.name %>
     &nbsp;&nbsp;|&nbsp;&nbsp;
+    <%= link_to "Posts", posts_path %>
     <%= link_to 'Log Out', session_path('dummy'), method: :delete %>
   <% else %>
     <%= link_to 'Log In', login_path %>
