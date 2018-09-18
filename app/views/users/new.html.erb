@@ -13,35 +13,35 @@
   <% end %>
   <div class="field form-group">
     <%= f.label :name, class: "form-control" %>
-    <%= f.text_field :name, class: "form-control" %>
+    <%= f.text_field :name, class: "form-control", placeholder: "Required* Real or persona, whichever you prefer..." %>
   </div>
   <div class="field form-group">
     <%= f.label :email, class: "form-control" %>
-    <%= f.text_field :email, class: "form-control" %>
+    <%= f.text_field :email, class: "form-control", placeholder: "Required* Will not be shared with anybody, ever." %>
   </div>
   <div class="field form-group">
     <%= f.label :password, class: "form-control" %>
-    <%= f.password_field :password, class: "form-control" %>
+    <%= f.password_field :password, class: "form-control", placeholder: "Required*" %>
   </div>
   <div class="field form-group">
     <%= f.label :password_confirmation, class: "form-control" %>
-    <%= f.password_field :password_confirmation, class: "form-control" %>
+    <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Required*" %>
   </div>
   <div class="field form-group">
     <%= f.label :age, class: "form-control" %>
-    <%= f.number_field :age, class: "form-control" %>
+    <%= f.number_field :age, class: "form-control", placeholder: "Optional, never shared." %>
   </div>
   <div class="field form-group">
     <%= f.label :location, class: "form-control" %>
-    <%= f.text_field :location, class: "form-control" %>
+    <%= f.text_field :location, class: "form-control", placeholder: "Optional, never shared." %>
   </div>
   <div class="field form-group">
     <%= f.label :gender, class: "form-control" %>
-    <%= f.text_field :gender, class: "form-control" %>
+    <%= f.text_field :gender, class: "form-control", placeholder: "Optional, never shared." %>
   </div>
   <div class="field form-group">
     <%= f.label :spirituality, class: "form-control" %>
-    <%= f.text_field :spirituality, class: "form-control" %>
+    <%= f.text_field :spirituality, class: "form-control", placeholder: "Optional, never shared." %>
   </div>
   <div class="actions"><%= f.submit %></div>
 <% end %>

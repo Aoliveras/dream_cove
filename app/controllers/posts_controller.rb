@@ -6,6 +6,7 @@ class PostsController < ApplicationController
 
     def new
         @post = Post.new
+        # @post = @user.posts.build
     end
 
     def show
@@ -13,11 +14,10 @@ class PostsController < ApplicationController
     end
 
     def create
-        @post = Post.new(post_params)
-
+        @post = current_user.posts.new(post_params)
         if @post.save
           flash[:success] = "Object successfully created"
-          redirect_to posts_path
+          redirect_to post_path(@post)
         else
           flash[:error] = "Something went wrong"
           redirect_to 'new'
@@ -25,6 +25,7 @@ class PostsController < ApplicationController
     end
 
     def edit
+
         @post = Post.find(params[:id])
     end
 
