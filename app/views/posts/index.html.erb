@@ -1,21 +1,20 @@
 <h1>Welcome to the Cove!</h1>
 <%= link_to "Post your Dream", new_post_path %>
 <div>
-    <th>All Dreams</th>
-    <table>
+    <table class="table">
+         <thead>All Dreams</th>
 
         <tr>
             <th>Title</th>
-            <th>Posted</th>
+            <th></th>
+            <th style="text-align: right">Posted</th>
 
         </tr>
 
         <% @posts.each do |post| %>
             <tr>
                 <td><%= link_to post.title, post_path(post) %><td>
-                <td><%= post.created_at.to_date
- %><td>
-
+                <td style="text-align: right"><%= post.created_at.to_date %><td>
             </tr>
         <% end %>
     </table>

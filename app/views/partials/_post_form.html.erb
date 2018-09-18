@@ -1,4 +1,4 @@
-<h1>Create a new post page</h1>
+<h1>Share your latest dream!</h1>
 <%= form_for @post do |f| %>
   <% if @post.errors.any? %>
     <div class="error_messages">
@@ -10,21 +10,21 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+  <div class="form-group">
+    <%= f.label :title, class: "form-control" %>
+    <%= f.text_field :title, class: "form-control", placeholder: "What should we call this bad boy?" %>
   </div>
-  <div class="field">
-    <%= f.label :body %>
-    <%= f.text_area :body %>
+  <div class="form-group">
+    <%= f.label :body, class: "form-control" %>
+    <%= f.text_area :body, class: "form-control", placeholder: "What did you dream about?" %>
   </div>
-  <div class="field">
-    <%= f.label :dream_time %>
-    <%= f.text_field :dream_time %>
+  <div class="form-group">
+    <%= f.label :dream_time, class: "form-control" %>
+    <%= f.text_field :dream_time, class: "form-control", placeholder: "Morning, Mid-day or Night" %>
   </div>
-  <div class="field">
-    <%= f.label :dream_type %>
-    <%= f.text_field :dream_type %>
+  <div class="form-group">
+    <%= f.label :dream_type, class: "form-control" %>
+    <%= f.text_field :dream_type, class: "form-control", placeholder: "Good, Neutral or Bad" %>
   </div>
   <div class="actions"><%= f.submit %></div>
 <% end %>
