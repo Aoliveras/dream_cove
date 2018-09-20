@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ .open-blurb {
+     margin: 40px auto 0 auto;
+     width: 800px;
+ }

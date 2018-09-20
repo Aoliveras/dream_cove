@@ -1,12 +1,11 @@
-<p>
+<nav class ="navbar navbar-light bg-light">
+<a class="navbar-brand" href="/">Dream.cove</a>
     <% if current_user %>
     Welcome, <%= current_user.name %>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <%= link_to "Posts", posts_path %>
-    <%= link_to 'Log Out', session_path('dummy'), method: :delete %>
+    <a class="nav-link"><%= link_to "Posts", posts_path %></a>
+    <a class="nav-link"><%= link_to 'Log Out', session_path('dummy'), method: :delete %></a>
   <% else %>
-    <%= link_to 'Log In', login_path %>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <%= link_to 'Sign Up', new_user_path %>
+    <a class="nav-link"><%= link_to 'Log In', login_path %></a>
+    <a class="nav-link"><%= link_to 'Sign Up', new_user_path %></a>
   <% end %>
-</p>
+</nav>

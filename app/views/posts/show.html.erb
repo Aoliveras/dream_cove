@@ -10,12 +10,15 @@
 <h6>Dream Type: <%= @post.dream_type %></h6>
 <h6>Date Posted: <%= @post.created_at.to_date %></h6>
 
+<hr />
+
 <h2><%= @post.comments.count %> Comments</h2>
+
+<hr />
+
 <% @post.comments.each do |c| %>
     <%= render "partials/comment", :comment => c %>
     <% end %>
-
-
 
 <hr />
 
