@@ -2,10 +2,10 @@
 <a class="navbar-brand" href="/">Dream.cove</a>
     <% if current_user %>
     Welcome, <%= current_user.name %>
-    <a class="nav-link"><%= link_to "Posts", posts_path %></a>
+    <a class="nav-link mr-auto"><%= link_to "Posts", posts_path %></a>
     <a class="nav-link"><%= link_to 'Log Out', session_path('dummy'), method: :delete %></a>
   <% else %>
-    <a class="nav-link"><%= link_to 'Log In', login_path %></a>
+    <a class="nav-link mr-auto"><%= link_to 'Log In', login_path %></a>
     <a class="nav-link"><%= link_to 'Sign Up', new_user_path %></a>
   <% end %>
 </nav>

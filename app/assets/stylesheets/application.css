@@ -14,6 +14,14 @@
  *= require_self
  */
 
+ body {
+     background-image: url("http://getwallpapers.com/wallpaper/full/a/6/f/1033046-starry-sky-background-2560x1600-windows-xp.jpg");
+     background-color: blanchedalmond;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
  .open-blurb {
      margin: 40px auto 0 auto;
      width: 800px;
