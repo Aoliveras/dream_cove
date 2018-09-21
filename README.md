@@ -17,6 +17,8 @@ Dream.cove is a place that avid dreamer's or those curious about the dreamspace 
 
 For this project I utitlized my new found ruby on rails skills along with HTML, CSS and javascript. The vast majority of the implementation work was done by my friend rails. 
 
+I created a 3 model webb app with a User, Post and Comment model. The user has create, posts have full CRUD and comments have create and read. 
+
 Ruby, Rails, HTML, CSS, JavaScript, Moqups
 
 GETTING STARTED
