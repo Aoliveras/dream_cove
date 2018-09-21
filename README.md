@@ -1,24 +1,42 @@
-# README
+# Dream.cove
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dream.cove is a place that avid dreamer's or those curious about the dreamspace can come toin order to share their thoughts and learn through others by posting their dreams and allowing others from the community to do the same. It is a safe, shared, creative space for the curious dreamer. 
 
-Things you may want to cover:
+# Screenshots
 
-* Ruby version
 
-* System dependencies
+![Alt text](https://i.imgur.com/uUJAcjC.png "Optional title")
 
-* Configuration
+![Alt text](https://i.imgur.com/N1eA5Ph.jpg "Optional title")
 
-* Database creation
+![Alt text](https://i.imgur.com/BnIxOkv.png "Optional title")
 
-* Database initialization
+![Alt text](https://i.imgur.com/SStIu2W.png "Optional title")
 
-* How to run the test suite
+# Technologies
 
-* Services (job queues, cache servers, search engines, etc.)
+For this project I utitlized my new found ruby on rails skills along with HTML, CSS and javascript. The vast majority of the implementation work was done by my friend rails. 
 
-* Deployment instructions
+Ruby, Rails, HTML, CSS, JavaScript, Moqups
 
-* ...
+GETTING STARTED
+
+A link to the website can be found here...
+<br/>
+
+[my heroku link] (https://still-everglades-53826.herokuapp.com/)
+
+[my trello link] (https://trello.com/b/h6EgpIkJ/dreamcove)
+
+-Wireframes
+
+![Alt text](https://i.imgur.com/NT3XuTL.png "Optional title")
+
+![Alt text](https://i.imgur.com/hQZF7EV.png "Optional title")
+
+![Alt text](https://i.imgur.com/IHz1Lji.png "Optional title")
+
+ERD
+![Alt text] (https://i.imgur.com/iYuFfpF.jpg)
+
+
