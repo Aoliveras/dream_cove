@@ -1,22 +1,27 @@
-<h1>Welcome to the Cove!</h1>
-<p id="alert"><%= alert %></p>
-<%= link_to "Post your Dream", new_post_path %>
-<div>
-    <table class="table">
-         <thead>All Dreams</th>
+<div class="container">
+    <h1 class="display-4 text-center">Welcome home, dreamer</h1>
+    <br />
+    <p id="alert"><%= alert %></p>
+        <table class="table mx-auto" style="width: 85%">
+            <thead>
+                <tr>
+                    <th>Dream Title</th>
+                    <th>&nbsp</th>
+                    <th>Dream Type</th>
+                    <th style="text-align: right">Posted</th>
+                </tr>
+            </thead>
 
-        <tr>
-            <th>Title</th>
-            <th></th>
-            <th style="text-align: right">Posted</th>
-
-        </tr>
-
-        <% @posts.each do |post| %>
-            <tr>
-                <td><%= link_to post.title, post_path(post) %><td>
-                <td style="text-align: right"><%= post.created_at.to_date %><td>
-            </tr>
-        <% end %>
-    </table>
+                <% @posts.each do |post| %>
+            <tbody>
+                 <tr>
+                    <td><%= link_to post.title, post_path(post) %><td>
+                    <td><%= post.dream_type %></td>
+                    <td style="text-align: right"><%= post.created_at.to_date %><td>
+                </tr>
+            </tbody>
+                <% end %>
+        </table>
+        <hr />
+        <h3 class="text-center"><%= link_to "Post your Dream", new_post_path %></h3>
 </div>

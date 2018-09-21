@@ -1,29 +1,36 @@
 <%# These should only be accesible on the posts show page if you are the owner%>
 <% if @post.user_id === current_user.id %>
     <%= link_to "Edit Dream", edit_post_path(@post) %>
+    |
     <%= link_to "Delete Dream", post_path(@post), method: :delete, data: { confirm: 'Delete this post? Are you sure?'} %>
 <% end%>
 <p id="alert"><%= alert %></p>
-<h1><%= @post.title %></h1>
-<h2><%= @post.body %></h2>
-<h6>Dream Time: <%= @post.dream_time %></h6>
-<h6>Dream Type: <%= @post.dream_type %></h6>
-<h6>Date Posted: <%= @post.created_at.to_date %></h6>
+    <div class="container" style="width: 85%">
+    <h1 class="text-center display-3"><%= @post.title %></h1>
+    <hr />
+    <p class="lead text-justify"><%= @post.body %></p>
+    <hr />
+    <div class="container text-center">
+        <h6>Dream Time: <%= @post.dream_time %></h6>
+        <h6>Dream Type: <%= @post.dream_type %></h6>
+        <h6>Date Posted: <%= @post.created_at.to_date %></h6>
+    </div>
 
-<hr />
+    <hr />
 
-<h2><%= @post.comments.count %> Comments</h2>
+    <h2><%= @post.comments.count %> Comments</h2>
 
-<hr />
+    <hr />
 
-<% @post.comments.each do |c| %>
-    <%= render "partials/comment", :comment => c %>
-    <% end %>
+    <% @post.comments.each do |c| %>
+        <%= render "partials/comment", :comment => c %>
+        <% end %>
 
-<hr />
+    <hr />
 
-<h3>Leave a comment</h3>
+    <h3 class="display-4">Leave a comment</h3>
 
-<%= render "partials/comment_form" %>
+    <%= render "partials/comment_form" %>
 
-<%#= link_to 'Delete', 'comment#destroy' %>
+    <%#= link_to 'Delete', 'comment#destroy' %>
+</div>
